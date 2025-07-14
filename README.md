@@ -62,18 +62,6 @@ This project uses supervised machine learning to classify whether a person's inc
 
 ---
 
-▶ Model Comparison Summary
-
-| Model               | Accuracy | F1 (>50K) | Recall (>50K) | Best Use Case               |
-|--------------------|----------|-----------|----------------|-----------------------------|
-| Logistic Regression| 0.80     | 0.68      | **0.84**       | High recall on >50K class   |
-| Random Forest       | 0.79     | 0.69      | **0.89**       | ▶ Best for tax screening    |
-| Gradient Boosting   | 0.86     | 0.71      | 0.67           | Balanced performance        |
-| KNN                 | 0.84     | 0.67      | 0.65           | Moderate performance        |
-| Linear SVC          | 0.80     | 0.68      | **0.86**       | Lightweight, fast model     |
-
----
-
 ## Visualizations
 
 - 📌 **PRC Curve** for each classifier  
@@ -82,13 +70,36 @@ This project uses supervised machine learning to classify whether a person's inc
 
 ---
 
-🔚 Final Conclusion
+### ▶ Model Comparison Summary
 
-- After model tuning and comparison, **Random Forest** showed the **best recall** (0.89) for identifying high-income individuals, making it ideal for applications like **tax assessment** or **eligibility screening**.
-- Logistic Regression and Linear SVC also performed well, especially in **precision-recall balance**.
-- Hyperparameter tuning proved **essential** for improving model generalization and ensuring fairness across classes.
+| Model               | Accuracy | Precision (>50K) | Recall (>50K) | F1 (>50K) | Best Use Case               |
+|---------------------|----------|------------------|----------------|-----------|-----------------------------|
+| Logistic Regression | 0.80     | 0.57             | **0.84**       | 0.68      | High recall on >50K class   |
+| Random Forest       | 0.79     | 0.56             | **0.89**       | 0.69      | ▶ Best for tax screening    |
+| Gradient Boosting   | 0.86     | 0.77             | 0.67           | 0.71      | Balanced performance        |
+| K-Nearest Neighbors | 0.84     | 0.69             | 0.65           | 0.67      | Moderate performance        |
+| Linear SVC          | 0.80     | 0.57             | **0.86**       | 0.68      | Lightweight, fast model     |
 
 ---
+
+🔚# **Final Conclusion**.
+
+After thorough **model development**, **hyperparameter tuning**, and **performance evaluation**, the **Random Forest Classifier** emerged as the **most effective model**, achieving the **highest recall (0.89)** for identifying *high-income individuals (>50K)*.
+
+🎯 **Best Use Case**:  
+Ideal for real-world applications such as:  
+- **Tax eligibility screening** . 
+- **Policy targeting**.  
+- **Income-based resource allocation**.
+
+Both **Logistic Regression** and **Linear SVC** demonstrated **competitive performance**, showing a strong balance between **precision** and **recall**. These models are excellent for scenarios requiring:
+- **Interpretability**.
+- **Lightweight deployment**.
+
+ **Hyperparameter tuning** played a key role in improving:
+- Generalization.
+- Fairness across income classes.
+- Class-specific performance (especially for the minority class).
 
 
 **Radhika P S**  
