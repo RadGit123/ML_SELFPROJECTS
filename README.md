@@ -62,7 +62,7 @@ This project uses supervised machine learning to classify whether a person's inc
 
 ---
 
-##▶ Model Comparison Summary
+▶ Model Comparison Summary
 
 | Model               | Accuracy | F1 (>50K) | Recall (>50K) | Best Use Case               |
 |--------------------|----------|-----------|----------------|-----------------------------|
@@ -82,7 +82,7 @@ This project uses supervised machine learning to classify whether a person's inc
 
 ---
 
-## 🔚 Final Conclusion
+🔚 Final Conclusion
 
 - After model tuning and comparison, **Random Forest** showed the **best recall** (0.89) for identifying high-income individuals, making it ideal for applications like **tax assessment** or **eligibility screening**.
 - Logistic Regression and Linear SVC also performed well, especially in **precision-recall balance**.
