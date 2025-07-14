@@ -66,9 +66,9 @@ This project uses supervised machine learning to classify whether a person's inc
 
 | Model               | Accuracy | F1 (>50K) | Recall (>50K) | Best Use Case               |
 |--------------------|----------|-----------|----------------|-----------------------------|
-| Logistic Regression| 0.80     | 0.69      | **0.85**       | High recall on >50K class   |
+| Logistic Regression| 0.80     | 0.68      | **0.84**       | High recall on >50K class   |
 | Random Forest       | 0.79     | 0.69      | **0.89**       | ▶ Best for tax screening    |
-| Gradient Boosting   | 0.86     | 0.72      | 0.67           | Balanced performance        |
+| Gradient Boosting   | 0.86     | 0.71      | 0.67           | Balanced performance        |
 | KNN                 | 0.84     | 0.67      | 0.65           | Moderate performance        |
 | Linear SVC          | 0.80     | 0.68      | **0.86**       | Lightweight, fast model     |
 
