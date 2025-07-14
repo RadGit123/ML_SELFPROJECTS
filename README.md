@@ -36,8 +36,8 @@ This project uses supervised machine learning to classify whether a person's inc
 ### 1. **Data Preprocessing**
 - Handled missing values (`?` → `NaN`)
 - Normalized categorical features (e.g., `.str.strip().str.lower()`)
-- Converted numerical columns to proper formats
-- Label encoded and scaled features as needed
+- Converted numerical columns to proper formats.
+- Applied One-Hot Encoding to categorical variables and scaled numerical features as needed to prepare the data for model training.
 
 ### 2. **Model Building**
 - Built models:
